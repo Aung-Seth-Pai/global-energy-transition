@@ -37,6 +37,8 @@ MANIFEST
 # Keep folder structure
 !data/raw/README.md
 !data/processed/README.md
+!project_archive/data/raw/README.md
+!project_archive/data/processed/README.md
 
 # Environment
 .env
