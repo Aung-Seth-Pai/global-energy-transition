@@ -1,0 +1,63 @@
+# Standard Python + data project .gitignore
+# Data files are intentionally excluded from version control
+
+cat > .gitignore << 'EOF'
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data
+# Ignore any data/raw or data/processed directories anywhere
+**/data/raw/**
+**/data/processed/**
+
+# Keep folder structure
+!data/raw/README.md
+!data/processed/README.md
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+EOF
+
+# Others
+mynotes.txt

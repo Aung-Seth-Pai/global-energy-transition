@@ -1,0 +1,11 @@
+jupyterlab
+notebook
+ipykernel
+lxml
+pandas
+matplotlib
+geopandas
+pyarrow
+ydata-profiling
+plotly
+numpy
