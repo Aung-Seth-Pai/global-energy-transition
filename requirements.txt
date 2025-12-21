@@ -9,3 +9,6 @@ pyarrow
 ydata-profiling
 plotly
 numpy
+json
+Pathlib
+re
