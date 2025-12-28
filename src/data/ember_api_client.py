@@ -14,7 +14,7 @@ API_KEY = os.getenv("EMBER_API")
 BASE_URL = os.getenv("EMBER_BASE_URL", "https://api.ember-energy.org")
 
 # for defining output file paths
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 # logging directory
 LOG_DIR = PROJECT_ROOT / "logs"
 LOG_DIR.mkdir(exist_ok=True)
@@ -41,7 +41,7 @@ class EmberAPI:
             raise ValueError("EMBER_API key not found in environment variables.")
         self.api_key = api_key
         self.base_url = base_url.rstrip("/")
-
+        
         # create session
         self.session = requests.Session()
         retries = Retry(total=3, backoff_factor=1)
