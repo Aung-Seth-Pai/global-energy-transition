@@ -33,6 +33,8 @@ def download_imf_energy_data(output_dir: str | Path) -> None:
             f.write(chunk)
     logger.info("IMF energy data download complete.")
 
+    return output_file_path
+
 
 def download_iso_codes(output_dir: str | Path) -> None:
     """Fetch ISO country codes and save CSV to the given directory."""
@@ -64,6 +66,8 @@ def download_iso_codes(output_dir: str | Path) -> None:
         logger.error(f"Error fetching ISO codes: {e}")
         raise
 
+    return output_file_path
+
 
 def download_natural_earth_data(output_dir: str | Path) -> None:
     """
@@ -91,3 +95,8 @@ def download_natural_earth_data(output_dir: str | Path) -> None:
         zip_ref.extractall(ne_dir)
 
     logger.info(f"Natural Earth data extracted to {ne_dir}.")
+
+    return zip_file_path.parent
+
+if __name__ == "main":
+    pass

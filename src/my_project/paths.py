@@ -14,3 +14,7 @@ def get_paths(project_root: Path | None = None):
         "NOTEBOOKS_DIR": project_root / "notebooks",
         "LOGS_DIR": project_root / "logs",
     }
+
+
+if __name__ == "__main__":
+    pass

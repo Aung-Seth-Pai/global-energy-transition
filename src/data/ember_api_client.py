@@ -175,14 +175,16 @@ class EmberAPI:
 # Example usage
 # -------------------------
 if __name__ == "__main__":
-    api = EmberAPI()
+    pass
 
-    # Example: Fetch Brazil yearly generation since 2000
-    data = api.electricity_generation_yearly(
-        entity_code="BRA",
-        start_date=2000,
-        is_aggregate_series=False
-    )
+    # api = EmberAPI()
+
+    # # Example: Fetch Brazil yearly generation since 2000
+    # data = api.electricity_generation_yearly(
+    #     entity_code="BRA",
+    #     start_date=2000,
+    #     is_aggregate_series=False
+    # )
 
     # Example: fetch & cache data
     # params = {
@@ -196,6 +198,6 @@ if __name__ == "__main__":
     #     params=params
     # )
 
-    logger.info("Fetched %d records", len(data.get("data", [])))
-    print("Sample data:", data.get("data", [])[:3])
+    # logger.info("Fetched %d records", len(data.get("data", [])))
+    # print("Sample data:", data.get("data", [])[:3])
 

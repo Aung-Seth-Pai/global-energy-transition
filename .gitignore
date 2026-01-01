@@ -33,10 +33,12 @@ MANIFEST
 # Ignore any data/raw or data/processed directories anywhere
 **/data/raw/**
 **/data/processed/**
+**/data/eda_interim/**
 
 # Keep folder structure
 !data/raw/README.md
 !data/processed/README.md
+!data/eda_interim/README.md
 !project_archive/data/raw/README.md
 !project_archive/data/processed/README.md
 
